@@ -1,0 +1,23 @@
+/* Fonts */
+
+@font-face {
+    font-family: vollkorn;
+    src: url(../fonts/Vollkorn-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: vollkorn;
+    src: url(../fonts/Vollkorn-Regular.ttf);
+}
+
+/* Colors */
+
+$primary-color1: #010101;
+$primary-color2: #fcc34e;
+$primary-color3: #fdce70;
+$primary-color4: #603913;
+
+
+/* Transition */
+
+$transition: all 0.5s;

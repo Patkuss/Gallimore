@@ -1,0 +1,19 @@
+section {
+  display: flex;
+  flex-direction: row;
+  .leftSide {
+    background-color: $primary-color2;
+    height: 100vh;
+    width: 100%;
+    flex: 0 0 50%;
+  }
+  .rightSide {
+    background-color: $primary-color1;
+    height: 100vh;
+    width: 100%;
+    flex: 0 0 50%;
+  }
+}
+
+
+
