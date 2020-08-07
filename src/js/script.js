@@ -66,3 +66,15 @@ $(document).ready(function(){
     );
   });
 });
+
+// smooth scroll //
+$(document).on('click', 'a[href^="#"]', function(smooth) {
+  var id = $(this).attr('href');
+  var $id = $(id);
+  if ($id.length === 0) {
+      return;
+  }
+  smooth.preventDefault();
+  var pos = $id.offset().top;
+  $('body, html').animate({scrollTop: pos});
+});

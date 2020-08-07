@@ -1,6 +1,7 @@
 section {
   display: flex;
   flex-direction: row;
+  scroll-behavior: smooth;
   .leftSide {
     background-color: $primary-color3;
     height: 100vh;
