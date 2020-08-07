@@ -9,7 +9,7 @@
     top: 30%;
     left: 30%;
     width: 450px;
-    z-index: 99;
+    z-index: 5;
     h1 {
       font-size: 44px;
       margin: 0;
@@ -27,4 +27,15 @@
       width: auto;
     }
   }
+}
+.bannerArea:after {
+  content: "";
+  z-index: 5;
+  position: absolute;
+  height: 15px;
+  width: 100%;
+  bottom: 0;
+  background-image: url(../images/beam.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
 }

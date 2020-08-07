@@ -9,9 +9,7 @@ body {
   padding-left: 8vw;
   width: 100%;
 }
-a {
+a, a:hover, a:focus, a:active {
   text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
+  color: inherit;
 }

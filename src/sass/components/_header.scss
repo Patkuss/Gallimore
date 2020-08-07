@@ -1,36 +1,38 @@
 header {
+  z-index: 10;
   .container {
     position: absolute;
   }
-}
-
-nav {
-  position: relative;
-  z-index: 99;
-  .menu {
-    padding: 0;
-    margin: 0 12vw;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    li {
-      display: inline;
-      padding-top: 10px;
-      a {
-        color: $primary-color2;
-        font-size: 25px;
-        font-weight: bold;
-        &:hover {
-          color: $primary-color3;
+  nav {
+    position: relative;
+    .menu {
+      padding: 0;
+      margin: 0 12vw;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+      li {
+        display: inline;
+        padding-top: 10px;
+        z-index: 10;
+        a {
+          color: $primary-color2;
+          font-size: 25px;
+          font-weight: bold;
+          z-index: 10;
+          &:hover {
+            color: $primary-color3;
+          }
         }
       }
-    }
-    .menu-logo {
-      padding: 0;
-      img {
-        height: 150px;
-        width: auto;
+      .menu-logo {
+        padding: 0;
+        img {
+          z-index: 50;
+          height: 150px;
+          width: auto;
+        }
       }
     }
   }
