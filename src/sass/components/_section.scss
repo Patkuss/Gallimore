@@ -16,11 +16,15 @@ section {
     height: 100vh;
     width: 100%;
     flex: 0 0 50%;
+    #RS4 {
+      opacity: 0;
+    }
   }
   .leftSectionContainer {
     height: 100%;
     width: auto;
     padding: 250px 8vw 0 8vw;
+    opacity: 0;
     .sectionText {
       font-size: 26px;
     }
@@ -29,6 +33,7 @@ section {
     height: 100%;
     width: auto;
     padding: 250px 8vw 0 8vw;
+    opacity: 0;
     img {
       border-radius: 8px;
       width: 100%;

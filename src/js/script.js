@@ -78,3 +78,177 @@ $(document).on('click', 'a[href^="#"]', function(smooth) {
   var pos = $id.offset().top;
   $('body, html').animate({scrollTop: pos});
 });
+
+// scroll magic pin //
+
+$(function() {
+  var controller = new ScrollMagic.Controller();
+
+  new ScrollMagic.Scene({
+    triggerElement: "#aboutArea",
+    triggerHook: 0,
+    duration: '30%',
+    reverse: true
+  })
+    .setPin("#LS1", {pushFollowers: false})
+    .addTo(controller);
+
+  new ScrollMagic.Scene({
+    triggerElement: "#aboutArea",
+    triggerHook: 0,
+    duration: '30%',
+    reverse: true
+  })
+    .setPin("#RS1", {pushFollowers: false})
+    .addTo(controller);
+
+  new ScrollMagic.Scene({
+    triggerElement: "#servicesArea",
+    triggerHook: 0,
+    duration: '30%'
+  })
+    .setPin("#LS2", {pushFollowers: false})
+    .addTo(controller);
+
+  new ScrollMagic.Scene({
+    triggerElement: "#servicesArea",
+    triggerHook: 0,
+    duration: '30%'
+  })
+    .setPin("#RS2", {pushFollowers: false})
+    .addTo(controller);
+
+  new ScrollMagic.Scene({
+    triggerElement: "#productArea",
+    triggerHook: 0,
+    duration: '30%'
+  })
+    .setPin("#LS3", {pushFollowers: false})
+    .addTo(controller);
+
+  new ScrollMagic.Scene({
+    triggerElement: "#productArea",
+    triggerHook: 0,
+    duration: '30%'
+  })
+    .setPin("#RS3", {pushFollowers: false})
+    .addTo(controller);
+});
+
+// scroll magic fadeIn fadeOut //
+
+$(function() {
+  var controller = new ScrollMagic.Controller();
+
+  new ScrollMagic.Scene({
+    triggerElement: "#aboutArea",
+    triggerHook: '5%',
+    duration: '20%',
+    reverse: true
+  })
+    .setTween("#LS1", 0.2, {opacity:1})
+    .addTo(controller);
+  new ScrollMagic.Scene({
+    triggerElement: "#servicesArea",
+    offset: -100,
+    reverse: true
+  })
+    .setTween("#LS1", 0.2, {opacity:0})
+    .addTo(controller);
+
+  new ScrollMagic.Scene({
+    triggerElement: "#aboutArea",
+    triggerHook: '5%',
+    duration: '20%',
+    reverse: true
+  })
+    .setTween("#RS1", 0.2, {opacity:1})
+    .addTo(controller);
+  new ScrollMagic.Scene({
+    triggerElement: "#servicesArea",
+    offset: -100,
+    reverse: true
+  })
+    .setTween("#RS1", 0.2, {opacity:0})
+    .addTo(controller);
+
+  new ScrollMagic.Scene({
+    triggerElement: "#servicesArea",
+    triggerHook: '5%',
+    duration: '20%',
+    reverse: true
+  })
+    .setTween("#LS2", 0.2, {opacity:1})
+    .addTo(controller);
+  new ScrollMagic.Scene({
+    triggerElement: "#productArea",
+    offset: -100,
+    reverse: true
+  })
+    .setTween("#LS2", 0.2, {opacity:0})
+    .addTo(controller);
+
+  new ScrollMagic.Scene({
+    triggerElement: "#servicesArea",
+    triggerHook: '5%',
+    duration: '20%',
+    reverse: true
+  })
+    .setTween("#RS2", 0.2, {opacity:1})
+    .addTo(controller);
+  new ScrollMagic.Scene({
+    triggerElement: "#productArea",
+    offset: -100,
+    reverse: true
+  })
+    .setTween("#RS2", 0.2, {opacity:0})
+    .addTo(controller);
+
+  new ScrollMagic.Scene({
+    triggerElement: "#productArea",
+    triggerHook: '5%',
+    duration: '20%',
+    reverse: true
+  })
+    .setTween("#LS3", 0.2, {opacity:1})
+    .addTo(controller);
+  new ScrollMagic.Scene({
+    triggerElement: "#contactArea",
+    offset: -100,
+    reverse: true
+  })
+    .setTween("#LS3", 0.2, {opacity:0})
+    .addTo(controller);
+
+  new ScrollMagic.Scene({
+    triggerElement: "#productArea",
+    triggerHook: '5%',
+    duration: '20%',
+    reverse: true
+  })
+    .setTween("#RS3", 0.2, {opacity:1})
+    .addTo(controller);
+  new ScrollMagic.Scene({
+    triggerElement: "#contactArea",
+    offset: -100,
+    reverse: true
+  })
+    .setTween("#RS3", 0.2, {opacity:0})
+    .addTo(controller);
+  new ScrollMagic.Scene({
+    triggerElement: "#contactArea",
+    triggerHook: '5%',
+    duration: '20%',
+    reverse: true
+  })
+    .setTween("#LS4", 0.2, {opacity:1})
+    .addTo(controller);
+
+  new ScrollMagic.Scene({
+    triggerElement: "#contactArea",
+    triggerHook: '5%',
+    reverse: true
+  })
+    .setTween("#RS4", 0.2, {opacity:1})
+    .addTo(controller);
+});
