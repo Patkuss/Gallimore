@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: $primary-color2 black;
 }
 body {
   font-family: vollkorn, sans-serif;
@@ -13,4 +15,19 @@ body {
 a, a:hover, a:focus, a:active {
   text-decoration: none;
   color: inherit;
+}
+h2 {
+  font-size: 39px;
+}
+
+body::-webkit-scrollbar {
+  width: 7.5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: $primary-color2;
 }

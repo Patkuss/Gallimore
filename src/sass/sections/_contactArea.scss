@@ -1,0 +1,30 @@
+.contactArea {
+  a {
+    transition: all 0.5s;
+  }
+  a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  ul {
+    list-style: none;
+    font-weight: bold;
+    padding-left: 5px;
+  }
+  .menu-list {
+    font-size: 50px;
+  }
+  .menu-contact {
+    li {
+      line-height: 1.25;
+      padding-top: 35px;
+    }
+    p {
+      font-weight: 500;
+      margin: 10px 0;
+      a {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+  }
+}

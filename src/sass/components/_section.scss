@@ -17,7 +17,23 @@ section {
     width: 100%;
     flex: 0 0 50%;
   }
+  .leftSectionContainer {
+    height: 100%;
+    width: auto;
+    padding: 250px 8vw 0 8vw;
+    .sectionText {
+      font-size: 26px;
+    }
+  }
+  .rightSectionContainer {
+    height: 100%;
+    width: auto;
+    padding: 250px 8vw 0 8vw;
+    img {
+      border-radius: 8px;
+      width: 100%;
+      height: auto;
+      box-shadow: 0px 0px 16px $primary-color2;
+    }
+  }
 }
-
-
-
