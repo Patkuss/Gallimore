@@ -1,24 +1,26 @@
 // hamburger //
 
 $(document).ready(function(){
-	$('#nav-icon').click(function(){
+  $('#nav-icon').click(function(){
     const navIcon = this;
     const hiddenMenu = document.querySelector('.hiddenMenu');
 
     $(navIcon).toggleClass('open');
     $(hiddenMenu).toggleClass('activeMenu');
-	});
+  });
 });
 
 // scrolled menu //
 
 $(document).scroll(function () {
-  var y = $(this).scrollTop();
-  var firstSection = $('.aboutArea').offset().top;
-  if (y+30 > firstSection) {
-      $('.sectionMenu').removeClass('scrolledMenu');
-  } else {
-      $('.sectionMenu').addClass('scrolledMenu');
+  if($(window).width() >= 950){
+    var y = $(this).scrollTop();
+    var firstSection = $('.aboutArea').offset().top;
+    if (y+30 > firstSection) {
+        $('.sectionMenu').removeClass('scrolledMenu');
+    } else {
+        $('.sectionMenu').addClass('scrolledMenu');
+    }
   }
 });
 
@@ -82,12 +84,14 @@ $(document).on('click', 'a[href^="#"]', function(smooth) {
 // scroll magic pin //
 
 $(function() {
+  var width = window.innerWidth;
   var controller = new ScrollMagic.Controller();
 
+  if (width >= 950) {
   new ScrollMagic.Scene({
     triggerElement: "#aboutArea",
     triggerHook: 0,
-    duration: '30%',
+    duration: '50%',
     reverse: true
   })
     .setPin("#LS1", {pushFollowers: false})
@@ -96,7 +100,7 @@ $(function() {
   new ScrollMagic.Scene({
     triggerElement: "#aboutArea",
     triggerHook: 0,
-    duration: '30%',
+    duration: '50%',
     reverse: true
   })
     .setPin("#RS1", {pushFollowers: false})
@@ -105,7 +109,8 @@ $(function() {
   new ScrollMagic.Scene({
     triggerElement: "#servicesArea",
     triggerHook: 0,
-    duration: '30%'
+    duration: '50%',
+    reverse: true
   })
     .setPin("#LS2", {pushFollowers: false})
     .addTo(controller);
@@ -113,7 +118,8 @@ $(function() {
   new ScrollMagic.Scene({
     triggerElement: "#servicesArea",
     triggerHook: 0,
-    duration: '30%'
+    duration: '50%',
+    reverse: true
   })
     .setPin("#RS2", {pushFollowers: false})
     .addTo(controller);
@@ -121,7 +127,8 @@ $(function() {
   new ScrollMagic.Scene({
     triggerElement: "#productArea",
     triggerHook: 0,
-    duration: '30%'
+    duration: '50%',
+    reverse: true
   })
     .setPin("#LS3", {pushFollowers: false})
     .addTo(controller);
@@ -129,17 +136,21 @@ $(function() {
   new ScrollMagic.Scene({
     triggerElement: "#productArea",
     triggerHook: 0,
-    duration: '30%'
+    duration: '50%',
+    reverse: true
   })
     .setPin("#RS3", {pushFollowers: false})
-    .addTo(controller);
+    .addTo(controller)
+  }
 });
 
 // scroll magic fadeIn fadeOut //
 
 $(function() {
+  var width = window.innerWidth;
   var controller = new ScrollMagic.Controller();
 
+  if (width >= 950) {
   new ScrollMagic.Scene({
     triggerElement: "#aboutArea",
     triggerHook: '5%',
@@ -251,4 +262,5 @@ $(function() {
   })
     .setTween("#RS4", 0.2, {opacity:1})
     .addTo(controller);
+  }
 });

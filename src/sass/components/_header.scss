@@ -39,3 +39,32 @@ header {
     }
   }
 }
+
+@media (max-width: 1390px) {
+  header {
+    nav {
+      .menu {
+        margin: 0 2vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  header {
+    nav {
+      .menu {
+        padding-top: 80px;
+        .menu-item {
+          display: none;
+          opacity: 0;
+          height: 0;
+          width: 0;
+        }
+        .menu-logo {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

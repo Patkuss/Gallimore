@@ -23,8 +23,9 @@
       position: absolute;
       right: 40%;
       bottom: 0;
-      height: 35vw;
-      width: auto;
+      height: auto;
+      width: 90%;
+      min-width: 400px;
     }
   }
 }
@@ -38,4 +39,22 @@
   background-image: url(../images/beam.png);
   background-repeat: repeat-x;
   background-position: bottom;
+}
+
+@media (max-width: 950px) {
+  .bannerArea {
+    .banner-content {
+      top: 35%;
+      left: auto;
+      width: 300px;
+      h1 {
+        font-size: 30px;
+      }
+    }
+    .image-wrapper {
+      img {
+        right: 0;
+      }
+    }
+  }
 }

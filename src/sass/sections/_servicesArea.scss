@@ -1,0 +1,25 @@
+.servicesArea {
+  .rightSectionContainer {
+    padding-top: 90px;
+    img {
+      width: 60%;
+      height: auto;
+      display: block;
+    }
+    .leftImage {
+      margin-right: auto;
+    }
+    .rightImage {
+      margin: 20px 0 20px auto;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .servicesArea {
+    .rightSectionContainer {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+}

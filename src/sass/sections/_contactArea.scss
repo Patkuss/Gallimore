@@ -28,3 +28,20 @@
     }
   }
 }
+
+@media (max-width: 950px) {
+  .contactArea {
+    .rightSide {
+      height: 100vh;
+      width: 100%;
+      #RS4 {
+        height: 100vh;
+        width: 100%;
+        #map {
+          height: 100vh;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
